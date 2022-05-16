@@ -4,8 +4,8 @@ const error = document.getElementById("error");
 const leyend = document.getElementById("leyend");
 const sent = document.getElementById("sent");
 
-btnSend.addEventListener("click", (e) => {
-  e.preventDefault()
+btnSend.addEventListener("click", () => {
+  
   let validRegex = /\S+@\S+\.\S+/;
 
   if (email.value.match(validRegex)) {
